@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,31 +35,166 @@
     </header>
     <main>
         <section id="banners">
-            
+
         </section>
         <section id="bem-vindo">
-            
+
         </section>
         <section id="valores">
-            
+
         </section>
         <section id="video-cafe">
-            
+
         </section>
         <section id="banner-secundario">
-            
+
         </section>
         <section id="galeria">
-            
+
         </section>
         <section id="cardapio-carrosel">
-            
+
         </section>
         <section id="cadastro-franquedo">
-            
+
         </section>
-        <section id="depoimentos">
-            
+        <section id="quem-somos">
+            <ul>
+                <li position="1" class="flex items-center gap-4">
+                    <div class="w-[100px] h-[100px] bg-red-500"></div>
+                    <h5>texto aki</h5>
+                </li>
+                <li position="2" class="items-center gap-4 hidden">
+                    <div class="w-[100px] h-[100px] bg-blue-500"></div>
+                    <h5>texto aki</h5>
+                </li>
+                <li position="3" class="items-center gap-4 hidden">
+                    <div class="w-[100px] h-[100px] bg-green-500"></div>
+                    <h5>texto aki</h5>
+                </li>
+                <li position="4" class="items-center gap-4 hidden">
+                    <div class="w-[100px] h-[100px] bg-orange-500"></div>
+                    <h5>texto aki</h5>
+                </li>
+                <li position="5" class="items-center gap-4 hidden">
+                    <div class="w-[100px] h-[100px] bg-pink-500"></div>
+                    <h5>texto aki</h5>
+                </li>
+            </ul>
+            <div class="controles hidden md:flex gap-4">
+                <div id="qs_prev" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative rotate-180 cursor-pointer">
+                    <div class="w-[12px] h-[2px] bg-white"></div>
+                    <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
+                </div>
+                <div id="qs_next" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative cursor-pointer">
+                    <div class="w-[12px] h-[2px] bg-white"></div>
+                    <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
+                </div>
+            </div>
+        </section>
+        <section id="depoimentos" class="px-4 md:px-0 py-[60px] md:py-[130px] relative">
+            <h6 class="text-center text-marrom-escuro text-[12px] md:text-[18px]">Depoimentos</h6>
+            <h2 class="text-center text-marrom-claro text-[24px] md:text-[50px] font-bold">Tudo sobre Tiamate Coffee
+            </h2>
+            <img 
+                class="hidden md:block md:mt-[40px]"
+                src="imgs/bg-depoimentos.png" 
+                alt="rapaz-servindo-café"
+            />
+            <div class="overflow-y-hidden mt-[26px] relative md:absolute bottom-[196px] right-0 md:w-3/4 md:overflow-hidden">
+                <ul id="carrossel" class="flex w-[calc(calc(100%_*_5)_+_calc(16px_*_4))] md:w-[calc(calc(400px_*_5)_+_calc(40px_*_4))] gap-4 md:gap-[40px] relative duration-200 left-0">
+                    <li class="w-1/3 md:w-[400px] bg-nude rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                        <div class="estrelas flex gap-[4px] mb-4">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                        </div>
+                        <p class="text-marrom-escuro text-[14px] mb-3 w-full">
+                            O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.
+                        </p>
+                        <div class="flex gap-4 items-center">
+                            <img src="imgs/depoimento1.png" alt="Kalil Sousa">
+                            <h6 class="text-terracota font-semibold">Kalil Sousa</h6>
+                        </div>
+                    </li>
+                    <li class="w-1/3 md:w-[400px] bg-nude rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                        <div class="estrelas flex gap-[4px] mb-4">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                        </div>
+                        <p class="text-marrom-escuro text-[14px] mb-3 w-full">
+                            O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.
+                        </p>
+                        <div class="flex gap-4 items-center">
+                            <img src="imgs/depoimento1.png" alt="Kalil Sousa">
+                            <h6 class="text-terracota font-semibold">Kalil Sousa</h6>
+                        </div>
+                    </li>
+                    <li class="w-1/3 md:w-[400px] bg-nude rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                        <div class="estrelas flex gap-[4px] mb-4">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                        </div>
+                        <p class="text-marrom-escuro text-[14px] mb-3 w-full">
+                            O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.
+                        </p>
+                        <div class="flex gap-4 items-center">
+                            <img src="imgs/depoimento1.png" alt="Kalil Sousa">
+                            <h6 class="text-terracota font-semibold">Kalil Sousa</h6>
+                        </div>
+                    </li>
+                    <li class="w-1/3 md:w-[400px] bg-nude rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                        <div class="estrelas flex gap-[4px] mb-4">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                        </div>
+                        <p class="text-marrom-escuro text-[14px] mb-3 w-full">
+                            O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.
+                        </p>
+                        <div class="flex gap-4 items-center">
+                            <img src="imgs/depoimento1.png" alt="Kalil Sousa">
+                            <h6 class="text-terracota font-semibold">Kalil Sousa</h6>
+                        </div>
+                    </li>
+                    <li class="w-1/3 md:w-[400px] bg-nude rounded-[7px] px-[35px] pt-[58px] md:pt-[30px] pb-[32px]">
+                        <div class="estrelas flex gap-[4px] mb-4">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                            <img src="imgs/icon_star.png" alt="estrela">
+                        </div>
+                        <p class="text-marrom-escuro text-[14px] mb-3 w-full">
+                            O café é realmente bom, e os salgados também (pedi um croissant de 4 queijos). Já havia pedido antes via iFood mas resolvi fazer uma visita enquanto andava pelo Centro, o café fica mesmo ao lado da Praça do Ferreira. Vale a pena dar uma visitada quando quiser se refrescar com um café gelado deles ou tomar um café da manhã por lá.
+                        </p>
+                        <div class="flex gap-4 items-center">
+                            <img src="imgs/depoimento1.png" alt="Kalil Sousa">
+                            <h6 class="text-terracota font-semibold">Kalil Sousa</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="controles hidden absolute right-[60px] bottom-[130px] md:flex gap-4">
+                <div id="prev" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative rotate-180 cursor-pointer">
+                    <div class="w-[12px] h-[2px] bg-white"></div>
+                    <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
+                </div>
+                <div id="next" class="w-[45px] h-[45px] bg-marrom-claro hover:bg-marrom-escuro duration-200 rounded-full flex items-center justify-center relative cursor-pointer">
+                    <div class="w-[12px] h-[2px] bg-white"></div>
+                    <div class="w-[8px] h-[8px] border-r-2 border-r-white border-b-2 border-b-white -rotate-45 absolute top-[(50%_-_8px)] left-[(50%_-_2px)]"></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -63,4 +202,54 @@
     </footer>
 </body>
 
+<script>
+
+    let c_click = 0;
+    next.onclick = () => {
+        if(c_click < 3){
+            c_click += 1;
+            carrossel.style.left = `-${c_click * 400}px`;
+        }
+    }
+    prev.onclick = () => {
+        if(c_click > 0){
+            c_click -= 1;
+            carrossel.style.left = `-${c_click * 400}px`;
+        }
+    }
+    
+
+    let lis = document.querySelectorAll('#quem-somos ul li');
+    let li_ativa = 0;
+
+    qs_next.onclick = () => {
+        lis.forEach(li => {
+            if(!li.className.includes('hidden')){
+                li_ativa = Number(li.attributes[0].value);
+                li.classList.remove('flex');
+                li.classList.add('hidden');
+            }
+            if(li.attributes[0].value == (li_ativa+1)){
+                li.classList.add('flex');
+                li.classList.remove('hidden');
+            }
+        })
+    }
+
+    qs_prev.onclick = () => {
+        lis.forEach(li => {
+            if(!li.className.includes('hidden')){
+                li_ativa = Number(li.attributes[0].value);
+                li.classList.remove('flex');
+                li.classList.add('hidden');
+            }
+            if(li.attributes[0].value == (li_ativa-1)){
+                li.classList.add('flex');
+                li.classList.remove('hidden');
+            }
+        })
+    }
+
+
+</script>
 </html>
